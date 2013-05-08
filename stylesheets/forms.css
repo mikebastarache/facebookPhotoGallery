@@ -1,0 +1,28 @@
+.styled-select {
+   width: 240px;
+   height: 27px;
+   overflow: hidden;
+   background: url(../images/arrow.png) no-repeat right #ddd;
+   border: 1px solid #827f7c;
+   color: #484848;
+   font-size: 13px;
+   line-height: 1;
+   float: left;
+   margin: 6px 0px 0px 2px;
+   cursor: pointer;
+   }
+
+.styled-select select {
+   background: transparent;
+   width: 240px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 27px;
+   font-size: 13px;
+   color: #484848;
+   -webkit-appearance: none;
+   cursor: pointer;
+   }

@@ -1,0 +1,176 @@
+/*
+  title: base css
+*/
+
+
+/* =global elements
+--------------------------------------------- */
+html,body {
+  width: 810px;
+  min-height:750px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:10px;
+}
+
+a:link, a:visited {
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+img {
+    border: 0px;
+    display: block;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#sticky_navigation {
+	background-image:url(../images/nav-background-solid.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	height:69px;
+    width: 810px;
+    z-index: 10;
+}
+
+.nav-container {
+	display:table-cell;
+	vertical-align:middle;
+	padding-bottom:12px;
+	color:#FFF;
+	font-weight:bold;
+	font-size:14px;
+    height: 54px;
+	line-height:40px;
+}
+
+.nav-btn {
+    float: right; 
+    padding-left: 10px;
+}
+
+#main {
+    background-color: #f2f2f2;
+    margin: 0px 17px 0px 17px;
+    width: 776px;
+    padding: 0px;
+}
+
+/**
+ * Grid container
+ */
+#tiles {
+list-style-type: none;
+position: relative; /** Needed to ensure items are laid out relative to this container **/
+background-color: #fff;
+margin: 0px;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+width: 215px;
+background-color: #ffffff;
+border: 1px solid #cbcbcb;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+display: none; /** Hide items initially to avoid a flicker effect **/
+padding: 10px;
+margin: 5px 0px 5px 5px;
+}
+
+#tiles li img {
+display: block;
+margin-bottom: 10px;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+color: #666;
+font-size: 12px;
+margin: 7px 0 0 7px;
+}
+
+.right-block {
+    float: right;
+    display: block;
+    cursor: pointer;
+}
+
+.iframe {
+    cursor: pointer;
+}
+
+.gridText {
+   float:left; display:inline;
+}
+.gridTextCount {
+   float:left; display:inline; margin:3px 0px 0px 3px;
+}
+
+/**
+ * Some extra styles to randomize heights of grid items.
+ */
+#tiles ali:nth-child(3n) {
+height: 175px;
+}
+
+#tiles ali:nth-child(4n-3) {
+padding-bottom: 30px;
+}
+
+#tiles ali:nth-child(5n) {
+height: 250px;
+}
+
+
+header{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    position: relative;
+}
+
+#loading{
+    width: 100%; 
+    padding:20px 0px 0px 0px;
+    margin: auto;
+    text-align: center;    
+}
+
+#loading img{
+   position: relative;
+   display: block;
+   margin:40px auto 20px auto;
+}
+
+/* ------------------------------------------ */
+
+/* =clearfix
+--------------------------------------------- */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
